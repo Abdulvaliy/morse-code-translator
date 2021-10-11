@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morse Translator</title>
+</head>
+
+<body>
+
+<form action="{{ url_for('sentence_translate') }}" method="post">
+    <textarea name="text1" id="1" cols="30" rows="10">{{text1}}</textarea>
+    <input type="submit" value="Translate">
+    <textarea name="text2" id="2" cols="30" rows="10">{{text2}}</textarea>
+
+</form>
+
+<form action="{{ url_for('morse_translate') }}" method="post">
+    <textarea name="text3" cols="30" rows="10">{{text3}}</textarea>
+    <input type="submit" value="Translate">
+    <textarea name="text4" cols="30" rows="10">{{text4}}</textarea>
+
+</form>
+<img src="static/Morse_Codee.png">
+
+</body>
+
+</html>
